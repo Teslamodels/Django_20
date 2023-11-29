@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Base</title>
+</head>
+<body>
+    <div style="text-decoration: none; color: steelblue; font-family: sans-serif; text-align: center;">
+        <header>
+            <h1><a href="{% url 'menu' %}" >Menu</a></h1>
+            <h2><a href="{% url 'create' %}">Post</a></h2>
+        </header>
+    </div>
+    
+    <div>
+        {% block content %}
+        {% endblock content %}
+    </div>
+</body>
+</html>
